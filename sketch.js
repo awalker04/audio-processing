@@ -7,9 +7,6 @@ function preload(){
     song = loadSound("sound/brandy-iwannabedown.mp3");
 }
 
-function preload(){
-    song = loadSound("sound/usher-youmakemewanna.mp3");
-}
 
 function setup(){
     createCanvas(600,400);
@@ -19,17 +16,9 @@ function setup(){
     button.mousePressed(togglePlaying);
     button.position(20, 100);
     
-    button = createButton("Usher");
-    button.mousePressed(togglePlaying);
-    button.position(400, 100);
-    
     skipButton = createButton("Skip");
     skipButton.mousePressed(skip);
     skipButton.position(80, 100);
-    
-    skipButton = createButton("Skip");
-    skipButton.mousePressed(skip);
-    skipButton.position(450, 100);
     
     //volume is increase/decreasing amplitude
     volumeSlider = createSlider(0, 1, 0.5, .05);
